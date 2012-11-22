@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+
+recursive-include *.py
+recursive-exclude *.pyc
+recursive-exclude *.swp
+
+recursive-include docs *
+
+recursive-include django_verbatim *
+recursive-exclude django_verbatim *.swp
+recursive-exclude django_verbatim *.pyc
