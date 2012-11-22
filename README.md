@@ -1,28 +1,34 @@
 RUN!!!
 ===
 
-Alpha project:
 **This project is alpha quality software and should be considered as placeholder for something that could eventually be usable.
 Therefor it has no documentation or any kind of support and shouldn't be used.**
 
-Beta project:
-**This is a usable project but everything related to this project is still ustable and likely to change.
-Don't use it in production but do open issues w/ posible use cases or bugs.**
-
-PROJECT
+django-verbatim
 ===
-Project description.
+Template block tag which renders template syntax characters within the block as normal text. This serves as an escape hatch to avoid syntax collisions when using a template language meant to be rendered on the client, not the server.
+
+This repo is just a package for PyPI, original code:
+https://gist.github.com/629508
+
+Django v1.5 should have compatible code included:
+https://code.djangoproject.com/ticket/14502
 
 Quickstart
 ---
-Step description:
+Use in template:
 
-    $ shell?
-    # code?
+    {% load verbatim %}
+
+    {% verbatim %}
+
+    My name is {{ name}}.
+
+    {% endverbatim %}
 
 Documentation
 ---
-- link to docs
+None (except quickstart).
 
 Support and updates
 ---
