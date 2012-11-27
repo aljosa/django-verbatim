@@ -10,6 +10,10 @@ https://code.djangoproject.com/ticket/14502
 
 Quickstart
 ---
+Install using `pip`:
+
+    $ pip install django-verbatim
+
 Use in template:
 
     {% load verbatim %}
