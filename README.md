@@ -13,6 +13,8 @@ Quickstart
 Install using `pip`:
 
     $ pip install django-verbatim
+    
+Add `django_verbatim` to your `INSTALLED_APPS`.
 
 Use in template:
 
